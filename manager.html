@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="dashboard-layout">
+        <aside class="sidebar">
+            <h2>LodgeSys</h2>
+            <ul>
+                <li class="active">Overview</li>
+                <li>Reports</li>
+                <li>Staff Management</li>
+                <li>Financials</li>
+                <li class="logout-btn"><a href="auth.html">Logout</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="dashboard-header">
+                <h1>Manager Dashboard</h1>
+                <button class="btn btn-outline btn-sm">Generate Report</button>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card"><h4>Occupancy Rate</h4><div class="value">78%</div></div>
+                <div class="stat-card"><h4>Revenue (Month)</h4><div class="value">$45,200</div></div>
+                <div class="stat-card"><h4>Staff on Duty</h4><div class="value">8</div></div>
+            </div>
+            <h3>Occupancy Overview</h3>
+            <div class="card" style="height: 300px; display:flex; align-items:center; justify-content:center; background:#f9f9f9;">
+                <p style="color:#888;">[Chart: Monthly Occupancy Trends would render here]</p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
