@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="dashboard-layout">
+        <aside class="sidebar">
+            <h2>LodgeSys</h2>
+            <ul>
+                <li class="active">Dashboard</li>
+                <li>User Management</li>
+                <li>System Settings</li>
+                <li>Backups</li>
+                <li>Logs</li>
+                <li class="logout-btn"><a href="auth.html">Logout</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="dashboard-header">
+                <h1>System Administration</h1>
+                <button class="btn btn-primary btn-sm">+ Add User</button>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card"><h4>Total Users</h4><div class="value">142</div></div>
+                <div class="stat-card"><h4>System Status</h4><div class="value" style="font-size:1.2rem; color:green;">Online</div></div>
+            </div>
+            <h3>User Management</h3>
+            <table class="data-table">
+                <thead><tr><th>Username</th><th>Role</th><th>Last Login</th><th>Status</th><th>Action</th></tr></thead>
+                <tbody>
+                    <tr><td>admin01</td><td>Administrator</td><td>Nov 08, 10:00 AM</td><td>Active</td><td><button class="btn btn-outline btn-sm">Edit</button></td></tr>
+                    <tr><td>rec_sarah</td><td>Receptionist</td><td>Nov 08, 08:30 AM</td><td>Active</td><td><button class="btn btn-outline btn-sm">Edit</button></td></tr>
+                    <tr><td>mgr_david</td><td>Manager</td><td>Nov 07, 05:00 PM</td><td>Inactive</td><td><button class="btn btn-outline btn-sm">Edit</button></td></tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+</body>
+</html>
