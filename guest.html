@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="dashboard-layout">
+        <aside class="sidebar">
+            <h2>LodgeSys</h2>
+            <ul>
+                <li class="active">My Bookings</li>
+                <li>Services</li>
+                <li>Profile</li>
+                <li>Support</li>
+                <li class="logout-btn"><a href="auth.html">Logout</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="dashboard-header">
+                <h1>Welcome, Guest</h1>
+                <button class="btn btn-outline btn-sm">Edit Profile</button>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card"><h4>Current Booking</h4><div class="value">Room 204</div></div>
+                <div class="stat-card"><h4>Check-out Date</h4><div class="value" style="font-size: 1.5rem;">Nov 12, 2026</div></div>
+            </div>
+            <h3>My Services</h3>
+            <div class="grid-3">
+                <div class="card"><h3>Room Service</h3><p>Order food to your room.</p><button class="btn btn-primary btn-sm" style="margin-top:1rem;">Order Now</button></div>
+                <div class="card"><h3>Book Tour</h3><p>Schedule a local guide.</p><button class="btn btn-primary btn-sm" style="margin-top:1rem;">Book</button></div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
