@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LodgeSys - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><span class="logo-icon"></span> LodgeSys</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+
+    <div class="auth-container">
+        <h2 id="auth-title">Login to LodgeSys</h2>
+        <form id="auth-form" >
+            <div class="form-group" id="name-group" style="display:none;">
+                <label>Full Name</label>
+                <input type="text" placeholder="John Doe">
+            </div>
+            <div class="form-group">
+                <label>Email / Username</label>
+                <input type="text" placeholder="user@lodge.com" required>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" placeholder="••••••••" required>
+            </div>
+            <div class="form-group" id="role-group" style="display:none;">
+                <label>Role</label>
+                <select id="user-role">
+                    <option value="guest">Guest</option>
+                    <option value="receptionist">Lodge Receptionist</option>
+                    <option value="manager">Lodge Manager</option>
+                    <option value="admin">System Administrator</option>
+                </select>
+            </div>
+            <button type="submit" id="auth-submit-btn" class="btn btn-primary" style="width: 100%;">Login</button>
+        </form>
+        <div class="auth-toggle">
+            <p id="toggle-text">Don't have an account? <a href="#" >Register here</a></p>
+        </div>
+        
+
+    </div>
+
+
+</body>
+</html>
